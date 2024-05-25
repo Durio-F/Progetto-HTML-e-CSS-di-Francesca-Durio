@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durio Francesca</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="Durio Francesca - Curriculum Vitae">
+    <meta property="og:description" content="Portfolio di Durio Francesca, sviluppatrice web.">
+    <meta property="og:image" content="assets/images/profilo-cv.jpg">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="content flex">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#about">Chi Sono</a></li>
+                    <li><a href="#skills">Competenze</a></li>
+                    <li><a href="#contact">Contattami</a></li>
+                    <li><a href="portfolio/index.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="navbar" id="header-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="intro">
+        <h1>Ciao e benvenuto sul mio sito personale! 👋</h1>
+        <p>Sono Francesca Durio, una  studentessa di sviluppo web. <br>
+            Esplora il mio portfolio per scoprire i miei progetti e le mie competenze. <br>
+            Se hai domande o vuoi collaborare, non esitare a
+            contattarmi!</p>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Chi Sono</h2>
+            <div class="cnt">
+                <p><strong>Ciao! Sono Durio Francesca 👋</strong> <br>
+                    Ho 25 anni, vivo a <a href="https://www.google.com/maps/place/13011+Borgosesia+VC/" target="_blank"
+                        rel="noopener">Borgosesia</a>, in provincia di Vercelli. <br> <br>
+                    Sono una studentessa di sviluppo web <br> con una fervida passione per il creare esperienze digitali
+                    coinvolgenti e funzionali. <br> <br>
+                    Sono una persona estremamente creativa, empatica e curiosa; La mia immaginazione non ha limiti, e
+                    amo esprimermi attraverso l'arte e la musica. <br> <br>
+                    L'empatia è una parte fondamentale di me, mi piace connettermi con gli altri e capire i loro
+                    sentimenti, pensieri e prospettive. <br> <br>
+                    La curiosità è ciò che mi guida a esplorare il mondo e scoprire cose nuove. Sono sempre alla ricerca
+                    di sfide che mi permettano di crescere e imparare.</p>
+                <img src="assets/images/profilo.jpg" alt="Foto profilo">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Competenze</h2>
+            <div class="cnt">
+                <img src="assets/images/competenze.jpg" alt="skills">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <form id="contact-form">
+            <div class="contact-form">
+                <h2>Contattami</h2>
+                <div class="contact-form-info-container">
+                    <input type="text" id="sendername" name="sendername" placeholder="Nome" required>
+                    <input type="text" id="subject" name="subject" placeholder="Cognome" required>
+                    <input type="email" id="replyto" name="replyto" placeholder="latuamail@email.com" required>
+                    <input type="tel" id="from_phone" name="from_phone" placeholder="Numero di telefono">
+                </div>
+                <textarea class="contact-form-msg" id="message" name="message"
+                    placeholder="Come posso esserti utile; (max 200 caratteri)" maxlength="200" required></textarea>
+                <input type="submit" class="contact-form-sub" value="Invia">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/francesca-durio/" target="_blank" rel="noopener">Linkedin</a>
+            <a href="https://github.com/Durio-F" target="_blank" rel="noopener">Github</a>
+            <a href="https://talent.start2impact.it/profile/francesca-durio" target="_blank"
+                rel="noopener">Start2impact</a>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Durio Francesca</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

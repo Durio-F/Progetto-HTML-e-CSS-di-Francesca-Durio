@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 10px 0;
+    background-color: #013A40;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+
+}
+
+.menu li{
+    position: relative;
+    font-size: 20px;
+
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    transition: .3s;
+
+}
+
+.navbar{
+    display: none;
+    cursor: pointer;
+
+}
+
+.icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color:#9ebbbf;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.show{
+    display: block;
+}
+
+
+
+section {
+    display: flex;
+    padding: 50px 0;
+}
+
+
+section h1{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: lighter;
+    color: #000d26;
+    margin: 80px 0
+} 
+
+#intro {
+    flex-direction: column;
+    background: linear-gradient(180deg, #013A40, #5c878c, #9ebbbf, #c5d6d8);
+    padding: 50px; 
+}
+
+#intro p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+section h2 {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgba(92, 135, 140, 1);
+
+}
+
+
+
+
+/*CHI SONO*/
+
+.cnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnt p{
+    margin: auto
+}
+
+.cnt a{
+    color: #013A40;
+    text-decoration: none;
+}
+
+.cnt img {
+    width: 350px;
+}
+
+strong{
+    color: #013A40;
+}
+
+#skills{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(270deg, #013A40, #5c878c, #9ebbbf);
+
+}
+
+#skills img{
+    width: 100%;
+}
+
+#skills h2 {
+    color:#fff;
+}
+
+/*FORM*/
+
+
+form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-form{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items:center;
+
+    width: 80%;
+    margin-left:20px;
+    margin-right:20px;
+    padding:10px 10px;
+
+    border-radius:20px;
+    background-color: #5c878c;
+
+}
+
+.contact-form h2{
+    color: white;
+    margin-top: 25px;
+}
+
+.contact-form-info-container{
+    width:80%;
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.contact-form-info-container input{
+    padding:5px;
+    height:35px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:1px solid #6b818c;
+    background-color:#c5d6d8;
+}
+
+.contact-form-info-container input:focus{
+    box-shadow:5px 5px 5px #5c878c;
+}
+
+.contact-form-info-container input:first-of-type{
+    margin-top:20px;
+}
+
+.contact-form-msg{
+    background-color:#c5d6d8;
+    width:80%;
+    min-height:200px;
+    margin-bottom:20px;
+    margin-top:20px;
+
+    color:#00120b;
+    border-radius:5px;
+    font-size:1em;
+    padding:5px;
+    resize:none;
+}
+
+.contact-form-sub{
+    width:120px;
+    height:40px;
+    border-radius:10px;
+    border:1px solid #6b818c;
+    background-color:#111;
+    text-align:center;
+    padding:5px;
+    font-size:large;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+
+}
+
+@media(min-width: 701px){
+    .contact-form{
+        min-width:550px;
+        min-height:600px;
+        border-radius:20px;
+        margin-left:300px;
+        margin-right:300px;
+        padding:10px 10px;
+    }
+    
+    .contact-form-info-container{
+        width:80%;
+        display:flex;
+        flex-flow:column nowrap;
+    }
+    
+    .contact-form-info-container input{
+        min-height:45px;
+        min-width:450px;
+        max-width:600px;
+        margin: 15px auto;
+    }
+    
+
+    }
+
+
+  /*FOOTER*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/*Cell*/
+@media only screen and (max-width: 700px)  {
+    
+    body{
+        font-size: 18px;
+    }
+
+    .navbar{
+        display: block;
+        position: fixed;
+        background-color: #01393f;
+        border: 1px solid #01393f;
+        border-radius: 8px;
+        padding: 7px;
+        right: 40px;
+    }
+
+    .icon-bar{
+        color: #5c878c;
+    }
+
+    nav{
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 99999;
+        background-color:#5c878c;
+        transition: all ease .3s;
+    }
+
+    .wide{
+        left: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    #about .cnt {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #skills img{
+        width: 125%;
+    }
+  
+}
+
+
+/*Tablet*/
+@media only screen and (min-width: 701px) and (max-width:960px) {
+ 
+    body{
+        font-size: 15px;
+    }
+
+
+    .navbar{
+        display: block;
+        position: fixed;
+        background-color: #01393f;
+        border: 1px solid #01393f;
+        border-radius: 8px;
+        padding: 7px;
+        right: 40px;
+    }
+
+    .icon-bar{
+        color: #5c878c;
+    }
+    
+    nav{
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 99999;
+        background-color:#5c878c;
+        transition: all ease .3s;
+    }
+
+    .wide{
+        left: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    #about .cnt {
+        text-align: center;
+    }
+
+    #about img {
+        width: 50%;
+        margin: 0 auto;
+        margin-left: 40px;
+    }
+  
+
+  
+}
+
+
+
+ Color Theme Swatches in RGBA 
+.GLACIER-TEXTURES-—-Iceland-1-rgba { color: #000d26; }
+.GLACIER-TEXTURES-—-Iceland-2-rgba { color: #01393f; }
+.GLACIER-TEXTURES-—-Iceland-3-rgba { color: #5c878c; }
+.GLACIER-TEXTURES-—-Iceland-4-rgba { color: #9ebbbf; }
+.GLACIER-TEXTURES-—-Iceland-5-rgba { color: #c5d6d8; }
+
+
+
+
+

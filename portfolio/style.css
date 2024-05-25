@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #01393f;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 10px 0;
+    background-color: #013A40;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+
+}
+
+.menu li{
+    position: relative;
+    font-size: 20px;
+
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    transition: .3s;
+
+}
+
+.navbar{
+    display: none;
+    cursor: pointer;
+
+}
+
+.icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.show{
+    display: block;
+}
+
+/* SECTION PROGETTI*/
+
+hr{
+    border: 0;
+    height: 1px;
+    background-color:#5c878c;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    padding: 50px 0;
+}
+
+
+section h2 {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+    color: rgba(92, 135, 140, 1);
+
+}
+
+
+.cnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnt p{
+    width: 40%;
+    margin: auto
+    
+}
+
+
+.cnt img{
+    width: 550px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-bottom: 20px;    
+}
+
+strong{
+    color: #013A40;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+/*SECTION CURRICULUM*/
+
+.header-cv{
+    width: 80%;
+    background: linear-gradient(180deg, #013A40, #5c878c, #9ebbbf, #c5d6d8);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.header-cv h3{
+    color: #000d26;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.header-cv h4{
+    margin: 40px 0;
+    color:#fff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.header-cv h5 {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+
+    color: #5c878c;
+    background-color: #fff;
+    border-radius: 2px;
+    font-weight: lighter;
+    font-size: 17px;
+
+}
+
+
+.header-cv p {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 40px;
+}
+
+.header-cv ul {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 40px;
+}
+
+.presentazione {
+    margin-bottom: 30px;
+}
+
+
+/* SECTION CERTIFICAZIONI*/
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 80px;
+    background: linear-gradient(180deg, #000d26, #013A40);
+    width: 100%;
+    border-radius: 3px;
+}
+
+.image-grid img {
+    width: 100%; 
+    height: 300px;
+}
+
+
+
+
+  /*FOOTER*/
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 600px)  {
+    
+     
+    body{
+        font-size: 18px;
+    }
+
+    .navbar{
+        display: block;
+        position: fixed;
+        background-color: #01393f;
+        border: 1px solid #01393f;
+        border-radius: 8px;
+        padding: 7px;
+        right: 40px;
+    }
+
+    .icon-bar{
+        color: #5c878c;
+    }
+
+    nav{
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 99999;
+        background-color:#5c878c;
+        transition: all ease .3s;
+    }
+
+    .wide{
+        left: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    #project .cnt {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cnt p{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #project img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header-cv p {
+        width: 100%;
+    }
+
+    .formazione h5{
+        width: 100%;
+    }
+
+    .formazione ul{
+        width: 100%;
+    }
+
+    .image-grid {
+        display: block; 
+        padding: 10px;
+    }
+
+    .image-grid img {
+        width: 100%; 
+        height: 500px;
+        margin-top: 10px;
+    }
+
+ 
+}
+
+
+/*Tablet*/
+@media only screen and (min-width: 601px) and (max-width:960px) {
+ 
+    body{
+        font-size: 15px;
+    }
+
+
+    .navbar{
+        display: block;
+        position: fixed;
+        background-color: #01393f;
+        border: 1px solid #01393f;
+        border-radius: 8px;
+        padding: 7px;
+        right: 40px;
+    }
+
+    .icon-bar{
+        color: #5c878c;
+    }
+
+    nav{
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 99999;
+        background-color:#5c878c;
+        transition: all ease .3s;
+    }
+
+    .wide{
+        left: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    #project .cnt {
+        text-align: center;
+    }
+
+    #project img {
+        width: 50%;
+        margin: 0 auto;
+        margin-left: 40px;
+    }
+
+    .header-cv p {
+        width: 100%;
+    }
+
+    .formazione h5{
+        width: 100%;
+    }
+
+    .formazione ul{
+        width: 100%;
+    }
+
+
+    .image-grid {
+        display: block; 
+        padding: 10px;
+    }
+
+    .image-grid img {
+        width: 100%; 
+        height: 500px;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+ Color Theme Swatches in RGBA 
+.GLACIER-TEXTURES-—-Iceland-1-rgba { color: #000d26; }
+.GLACIER-TEXTURES-—-Iceland-2-rgba { color: #01393f; }
+.GLACIER-TEXTURES-—-Iceland-3-rgba { color: #5c878c; }
+.GLACIER-TEXTURES-—-Iceland-4-rgba { color: #9ebbbf; }
+.GLACIER-TEXTURES-—-Iceland-5-rgba { color: #c5d6d8; }
