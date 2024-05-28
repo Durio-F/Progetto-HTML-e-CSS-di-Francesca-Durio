@@ -85,6 +85,7 @@ header{
 /* SECTION PROGETTI*/
 
 hr{
+    width: 80%;
     border: 0;
     height: 1px;
     background-color:#5c878c;
